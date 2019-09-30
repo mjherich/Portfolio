@@ -1,6 +1,12 @@
 body {
   margin: 0;
 }
+h1, h2, h3, h4 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+p, span, li {
+  font-family: 'Open Sans', sans-serif;
+}
 
 // Structure of portfolio
 .portfolio-grid {
