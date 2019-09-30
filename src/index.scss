@@ -1,5 +1,10 @@
+body {
+  margin: 0;
+}
+
+// Structure of portfolio
 .portfolio-grid {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px auto;
 }

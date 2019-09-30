@@ -1,0 +1,20 @@
+.portfolio-nav {
+  background: lightblue;
+  display: grid;
+  .site-title {
+    padding: 15px;
+  }
+  .nav-links {
+    padding: 15px;
+    align-self: end;
+    ul {
+      list-style: none;
+    }
+  }
+}
+.nav-container {
+  position: absolute;
+  top: 0;
+  display: grid;
+  height: 100vh;
+}
