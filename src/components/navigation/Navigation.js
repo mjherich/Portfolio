@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <div className="portfolio-nav">
       <div className="site-title">
-        <h2>Matt Herich</h2>
+        <h1>Matt Herich</h1>
         <span>Full Stack Engineer</span>
       </div>
       <div className="nav-links">

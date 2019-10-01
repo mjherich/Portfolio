@@ -5,17 +5,17 @@ export default function Main() {
   return (
     <div className="portfolio-main">
       <section id="welcome">
-        <h1>Welcome!</h1>
-        <p>Thanks for checking out my portfolio!</p>
-        <p>Current Lambda School student seeking opportunities in blockstack technology.</p>
+        <h2 className="section-title">Welcome,</h2>
+        <p>My name is Matt and I'm a full stack engineer who likes making cool stuff with code.</p>
+        <p>I'm currently attending <a href="https://lambdaschool.com/" target="_blank">Lambda School</a>, an intensive coding bootcamp designed to give students the skills necessary for working effectively on a software development team.</p>
+        <p>Seeking new opportunities Spring 2020.</p>
       </section>
       <section id="skills">
-        <h1>Technical Skills</h1>
-        <p>Below are my skills</p>
+        <h2 className="section-title">Technical Skills</h2>
         <p>List skills here...</p>
       </section>
       <section id="projects">
-        <h1>Projects</h1>
+        <h2 className="section-title">Projects</h2>
         <p>Projects description</p>
         <p>List projects here...</p>
       </section>
