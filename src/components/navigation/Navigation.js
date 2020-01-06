@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-scroll';
+
 import './navigation.scss';
 
 export default function Navigation() {
@@ -10,9 +12,9 @@ export default function Navigation() {
       </div>
       <div className="nav-links">
         <ul className="portfolio-links">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link to="skills">Skills</Link></li>
+          <li><Link to="projects">Projects</Link></li>
+          <li><Link to="#">Contact</Link></li>
         </ul>
       </div>
     </div>
