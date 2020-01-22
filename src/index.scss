@@ -3,8 +3,10 @@ body {
 }
 
 // Fonts
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 h1, h2, h3, h4, .nav-links a, .site-title span {
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Big Shoulders Display', monospace;
 }
 p, span, li {
   font-family: 'Source Code Pro', monospace;
