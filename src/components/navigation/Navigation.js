@@ -11,9 +11,9 @@ export default function Navigation() {
       </div>
       <div className="nav-links">
         <ul className="portfolio-links">
-          <li><Link href="/skills">Skills</Link></li>
-          <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </div>

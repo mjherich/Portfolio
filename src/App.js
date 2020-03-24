@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Switch, BrowserRouter as Router } from 'react-router-dom';
 
 import './index.scss';
 import Main from './components/main/Main';
@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div className="portfolio-grid">
-            <Navigation/>
-            <Main />
-        </div>
+        <Switch>
+          <div className="portfolio-grid">
+              <Navigation/>
+              <Main />
+          </div>
+        </Switch>
       </Router>
     </div>
   );
