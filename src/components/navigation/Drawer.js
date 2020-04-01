@@ -10,9 +10,7 @@ import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 
 import "./navigation.scss"
 
@@ -56,6 +54,9 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
   },
+  list: {
+    marginTop: 'auto',
+  }
 }));
 
 export default function MiniDrawer({open, setOpen}) {
@@ -70,45 +71,40 @@ export default function MiniDrawer({open, setOpen}) {
   };
 
   return (
-    <div className={classes.root}>
-      <Drawer
-        variant="permanent"
-        className={clsx(classes.drawer, {
+    <Drawer
+      variant="permanent"
+      className={clsx(classes.drawer, {
+        [classes.drawerOpen]: open,
+        [classes.drawerClose]: !open,
+      })}
+      classes={{
+        paper: clsx({
           [classes.drawerOpen]: open,
           [classes.drawerClose]: !open,
-        })}
-        classes={{
-          paper: clsx({
-            [classes.drawerOpen]: open,
-            [classes.drawerClose]: !open,
-          }),
-        }}
-      >
-        <Container className="site-title">
-            <Typography variant="h2">Matt Herich</Typography>
-            <Typography variant="span">Full Stack Developer</Typography>
-        </Container>
-        <List>
-          <ListItem button>
-            <ListItemIcon><InboxIcon /></ListItemIcon>
-            <ListItemText primary="Skills" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><InboxIcon /></ListItemIcon>
-            <ListItemText primary="Projects" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon><InboxIcon /></ListItemIcon>
-            <ListItemText primary="Contact" />
-          </ListItem>
-        </List>
-        <Divider />
-        <div className={classes.toolbar}>
-          <IconButton onClick={open ? handleDrawerClose : handleDrawerOpen}>
-            {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
-        </div>
-      </Drawer>
-    </div>
+        }),
+      }}
+    >
+      <Container className="site-title">
+          <Typography variant="h2">Matt Herich</Typography>
+          <Typography variant="span">Full Stack Developer</Typography>
+      </Container>
+      <List className={classes.list}>
+        <ListItem button>
+          <ListItemText primary="Skills" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Projects" />
+        </ListItem>
+        <ListItem button>
+          <ListItemText primary="Contact" />
+        </ListItem>
+      </List>
+      <Divider />
+      <div className={classes.toolbar}>
+        <IconButton onClick={open ? handleDrawerClose : handleDrawerOpen}>
+          {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+        </IconButton>
+      </div>
+    </Drawer>
   );
 }
