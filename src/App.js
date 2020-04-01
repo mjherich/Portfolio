@@ -4,7 +4,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 
-import './index.scss';
 import Main from './components/main/Main';
 import MiniDrawer from './components/navigation/Drawer';
 
@@ -17,9 +16,15 @@ const theme = createMuiTheme({
       fontFamily: '"Big Shoulders Display"',
       fontWeight: 'bold',
     },
-    p: {
-      fontFamily: '"Source Code Pro"',
-    }
+    subtitle1: {
+      fontFamily: '"Ubuntu"',
+      fontSize: 22,
+      fontWeight: "300",
+      textTransform: "uppercase",
+    },
+    body1: {
+      fontFamily: '"Ubuntu"',
+    },
   },
 });
 

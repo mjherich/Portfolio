@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
   },
   list: {
     marginTop: 'auto',
+    fontFamily: '"Big Shoulders Display"'
   }
 }));
 
@@ -86,7 +87,7 @@ export default function MiniDrawer({open, setOpen}) {
     >
       <Container className="site-title">
           <Typography variant="h2">Matt Herich</Typography>
-          <Typography variant="span">Full Stack Developer</Typography>
+          <Typography variant="subtitle1">Full Stack Developer</Typography>
       </Container>
       <List className={classes.list}>
         <ListItem button>
