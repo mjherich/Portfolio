@@ -17,3 +17,16 @@
   font-size: 28px;
   font-weight: 600;
 }
+
+// Rotate nav links
+.makeStyles-drawerClose-12 {
+  transition: all 0.2s ease !important;
+
+  .MuiListItem-button span {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+}
+.MuiListItem-button span {
+  transition: all 0.1s ease-in-out;
+}
