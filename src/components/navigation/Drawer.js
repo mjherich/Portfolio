@@ -11,8 +11,12 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import "./navigation.scss"
+import { Link } from '@material-ui/core';
 
 const drawerWidth = 300;
 
@@ -88,6 +92,23 @@ export default function MiniDrawer({open, setOpen}) {
       <Container className="site-title">
           <Typography variant="h2">Matt Herich</Typography>
           <Typography variant="subtitle1">Full Stack Developer</Typography>
+          <Typography className="st-links">
+            <Link href="https://www.linkedin.com/in/matt-herich/" target="_blank">
+              <IconButton aria-label="LinkedIn">
+                <LinkedInIcon />
+              </IconButton>
+            </Link>
+            <Link href="https://github.com/mjherich" target="_blank">
+              <IconButton aria-label="Github">
+                <GitHubIcon />
+              </IconButton>
+            </Link>
+            <Link href="https://twitter.com/mattherich" target="_blank">
+              <IconButton aria-label="Twitter">
+                <TwitterIcon />
+              </IconButton>
+            </Link>
+          </Typography>
       </Container>
       <List className={classes.list}>
         <ListItem button>
