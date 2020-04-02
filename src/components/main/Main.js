@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Welcome from '../welcome/Welcome'
-import About from '../about/About';
 import Projects from '../projects/Projects';
+import About from '../about/About';
+import Contact from '../contact/Contact';
 import './main.scss';
 
 export default function Main() {
@@ -11,6 +12,7 @@ export default function Main() {
       <Welcome />
       <Projects />
       <About />
+      <Contact />
     </div>
   )
 }
