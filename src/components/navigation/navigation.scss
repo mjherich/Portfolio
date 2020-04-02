@@ -31,6 +31,44 @@
   user-select: none;
 }
 
+// Collapsed styles
+.makeStyles-drawerClose-12 {
+  // Site title container
+  .site-title {
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  // Name/Role
+  .title-container {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+  }
+  h2.MuiTypography-root.MuiTypography-h2 {
+      font-size: 36px;
+  }
+  h6.MuiTypography-root.MuiTypography-subtitle1 {
+    font-size: 18px;
+  }
+  // Social links
+  p.MuiTypography-root.st-links.MuiTypography-body1 {
+    display: flex;
+    flex-direction: column;
+    width: 56px;
+  }
+  // Rotate nav links
+  .MuiListItem-button span {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+  .st-links {
+    margin-top: 15px;
+  }
+}
+
 // 600px drawer breakpoint
 @media (max-width: 599px) {
   // Disable collapse toggle
@@ -50,42 +88,5 @@
       font-size: 20px;
       line-height: 120%;
     }
-  }
-}
-
-// Collapsed styles
-.makeStyles-drawerClose-12 {
-  // Site title container
-  .site-title {
-    padding: 0;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  // Name/Role
-  .title-container {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    text-align: center;
-  }
-  h2.MuiTypography-root.MuiTypography-h2 {
-    font-size: 36px;
-  }
-  h6.MuiTypography-root.MuiTypography-subtitle1 {
-    font-size: 18px;
-  }
-  // Social links
-  p.MuiTypography-root.st-links.MuiTypography-body1 {
-    display: flex;
-    flex-direction: column;
-  }
-  // Rotate nav links
-  .MuiListItem-button span {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-  }
-  .st-links {
-    margin-top: 15px;
   }
 }

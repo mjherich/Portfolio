@@ -14,6 +14,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import "./navigation.scss"
 import { Link } from '@material-ui/core';
@@ -111,13 +112,16 @@ export default function MiniDrawer({open, setOpen}) {
         </Typography>
       </Container>
       <List className={classes.list}>
-        <ListItem button>
+        <ListItem button component={AnchorLink} href="#projects">
           <ListItemText primary="Projects" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component={AnchorLink} href="#about">
           <ListItemText primary="About" />
         </ListItem>
-        <ListItem button>
+        <ListItem button component="a" href="https://drive.google.com/file/d/1xaYv15OpAJUL9ev277nCf9cEUwdCVBmk/view?usp=sharing" target="_blank">
+          <ListItemText primary="Resume" />
+        </ListItem>
+        <ListItem button component={AnchorLink} href="#contact">
           <ListItemText primary="Contact" />
         </ListItem>
       </List>
