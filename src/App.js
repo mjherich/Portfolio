@@ -11,15 +11,17 @@ const theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: '"Big Shoulders Display"',
+      fontWeight: '800',
+      fontSize: 56,
     },
     h2: {
       fontFamily: '"Big Shoulders Display"',
-      fontWeight: 'bold',
+      fontWeight: 'black',
     },
     h3: {
       fontFamily: '"Big Shoulders Display"',
       fontSize: 28,
-      fontWeight: '300',
+      fontWeight: '400',
       textTransform: "uppercase",
       letterSpacing: 2,
     },
@@ -29,7 +31,9 @@ const theme = createMuiTheme({
       fontSize: 26,
     },
     body1: {
-      fontFamily: '"Ubuntu"',
+      fontFamily: '"Open Sans"',
+      fontSize: 16,
+      fontWeight: '400',
     },
   },
 });
