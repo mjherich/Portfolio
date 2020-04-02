@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
@@ -73,9 +72,8 @@ function App() {
       <div className={classes.root}>
         <CssBaseline />
         <MiniDrawer open={open} setOpen={setOpen}/>
-        <main className={clsx(classes.content, {
-            [classes.contentShift]: open,
-          })}>
+        <main className={classes.content}>
+          <div className={classes.toolbar} />
           <Main />
         </main>
       </div>

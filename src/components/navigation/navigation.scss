@@ -30,3 +30,16 @@
 .MuiListItem-button span {
   transition: all 0.1s ease-in-out;
 }
+
+// Space out toolbar open/close
+.makeStyles-toolbar-13 {
+  margin: 5px 0;
+}
+
+// Disable expanding drawer on mobile
+@media (max-width: 500px) {
+  .MuiDivider-root,
+  .makeStyles-toolbar-13 {
+    display: none !important;
+  }
+}
