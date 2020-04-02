@@ -1,45 +1,91 @@
 // Site Title
 .site-title {
-  padding: 15px;
+  padding-top: 15px;
   span {
     font-size: 16px;
   }
-  .st-links {
-    text-align: center;
-  }
+  text-align: center;
 }
 
+// Site links
 .MuiDrawer-paper span {
   text-align: center;
   font-family: "Big Shoulders Display";
   text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
+}
+// Letter spacing
+.title-container .MuiTypography-subtitle1,
+.MuiDrawer-paper span {
+  letter-spacing: 2px;
 }
 
-// Rotate nav links
-.makeStyles-drawerClose-12 {
-  transition: all 0.2s ease !important;
-
-  .MuiListItem-button span {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-  }
-}
-.MuiListItem-button span {
-  transition: all 0.1s ease-in-out;
-}
-
-// Space out toolbar open/close
+// Drawer toggle spacing
 .makeStyles-toolbar-13 {
   margin: 5px 0;
 }
 
-// Disable expanding drawer on mobile
-@media (max-width: 500px) {
+// Disable highlighting of site title
+.title-container {
+  user-select: none;
+}
+
+// 600px drawer breakpoint
+@media (max-width: 599px) {
+  // Disable collapse toggle
   .MuiDivider-root,
   .makeStyles-toolbar-13 {
     display: none !important;
+  }
+  // Font size collapsed scaling
+  .makeStyles-drawerClose-12 {
+    h2.MuiTypography-root.MuiTypography-h2 {
+      font-size: 28px;
+    }
+    h6.MuiTypography-root.MuiTypography-subtitle1 {
+      font-size: 14px;
+    }
+    .MuiListItem-button span {
+      font-size: 20px;
+      line-height: 120%;
+    }
+  }
+}
+
+// Collapsed styles
+.makeStyles-drawerClose-12 {
+  // Site title container
+  .site-title {
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  // Name/Role
+  .title-container {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+  }
+  h2.MuiTypography-root.MuiTypography-h2 {
+    font-size: 36px;
+  }
+  h6.MuiTypography-root.MuiTypography-subtitle1 {
+    font-size: 18px;
+  }
+  // Social links
+  p.MuiTypography-root.st-links.MuiTypography-body1 {
+    display: flex;
+    flex-direction: column;
+  }
+  // Rotate nav links
+  .MuiListItem-button span {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+  .st-links {
+    margin-top: 15px;
   }
 }
