@@ -16,6 +16,13 @@ const theme = createMuiTheme({
       fontFamily: '"Big Shoulders Display"',
       fontWeight: 'bold',
     },
+    h3: {
+      fontFamily: '"Big Shoulders Display"',
+      fontSize: 28,
+      fontWeight: '300',
+      textTransform: "uppercase",
+      letterSpacing: 2,
+    },
     subtitle1: {
       fontFamily: '"Big Shoulders Display"',
       textTransform: "uppercase",

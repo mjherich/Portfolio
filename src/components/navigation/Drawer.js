@@ -112,10 +112,10 @@ export default function MiniDrawer({open, setOpen}) {
       </Container>
       <List className={classes.list}>
         <ListItem button>
-          <ListItemText primary="Skills" />
+          <ListItemText primary="Projects" />
         </ListItem>
         <ListItem button>
-          <ListItemText primary="Projects" />
+          <ListItemText primary="About" />
         </ListItem>
         <ListItem button>
           <ListItemText primary="Contact" />
