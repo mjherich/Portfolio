@@ -1,39 +1,32 @@
-.portfolio-nav {
-  background: black;
-  border-radius: 0 5px 5px 0;
-  display: grid;
-  position: relative;
-  // Site Title
-  .site-title {
-    padding: 15px;
-    color: white;
-    h1 {
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    span {
-      font-size: 22px;
-    }
+// Site Title
+.site-title {
+  padding: 15px;
+  span {
+    font-size: 16px;
   }
-  // Links
-  .nav-links {
-    padding: 25px;
-    align-self: end;
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    li {
-      font-size: 20px;
-      margin: 10px auto;
-    }
-    a {
-      font-size: 32px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: white;
-      text-decoration: none;
-    }
+  .st-links {
+    text-align: center;
   }
+}
+
+.MuiDrawer-paper span {
+  text-align: center;
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+// Rotate nav links
+.makeStyles-drawerClose-12 {
+  transition: all 0.2s ease !important;
+
+  .MuiListItem-button span {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+  }
+}
+.MuiListItem-button span {
+  transition: all 0.1s ease-in-out;
 }
