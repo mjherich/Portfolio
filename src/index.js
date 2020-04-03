@@ -9,6 +9,8 @@ import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloProvider } from 'react-apollo';
 
+import './App.scss';
+
 const GRAPHCMS_API = 'https://api-us-west-2.graphcms.com/v2/ck8j5190h1pbr01xv69qtd3cc/master';
 
 const client = new ApolloClient({

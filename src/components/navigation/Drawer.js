@@ -9,15 +9,13 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import Link from '@material-ui/core/Link';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-
-import "./navigation.scss"
-import { Link } from '@material-ui/core';
 
 const drawerWidth = 300;
 
@@ -77,7 +75,7 @@ export default function MiniDrawer({open, setOpen}) {
   return (
     <Drawer
       variant="permanent"
-      className={clsx(classes.drawer, {
+      className={clsx(classes.drawer, open ? 'open' : 'collapsed', {
         [classes.drawerOpen]: open,
         [classes.drawerClose]: !open,
       })}
@@ -118,15 +116,15 @@ export default function MiniDrawer({open, setOpen}) {
         <ListItem button component={AnchorLink} href="#about">
           <ListItemText primary="About" />
         </ListItem>
-        <ListItem button component="a" href="https://drive.google.com/file/d/1xaYv15OpAJUL9ev277nCf9cEUwdCVBmk/view?usp=sharing" target="_blank">
+        {/* <ListItem button component="a" href="https://drive.google.com/file/d/1xaYv15OpAJUL9ev277nCf9cEUwdCVBmk/view?usp=sharing" target="_blank">
           <ListItemText primary="Resume" />
-        </ListItem>
+        </ListItem> */}
         <ListItem button component={AnchorLink} href="#contact">
           <ListItemText primary="Contact" />
         </ListItem>
       </List>
       <Divider />
-      <div className={classes.toolbar}>
+      <div className={clsx(classes.toolbar, 'collapse-btn')}>
         <IconButton onClick={open ? handleDrawerClose : handleDrawerOpen}>
           {open ? <ChevronLeftIcon /> : <ChevronRightIcon />}
         </IconButton>

@@ -28,7 +28,7 @@
 }
 
 // Collapsed styles
-.makeStyles-drawerClose-12 {
+.collapsed {
   // Site title container
   .site-title {
     padding: 0;
@@ -68,11 +68,11 @@
 @media (max-width: 599px) {
   // Disable collapse toggle
   .MuiDivider-root,
-  .makeStyles-toolbar-13 {
+  .collapse-btn {
     display: none !important;
   }
   // Font size collapsed scaling
-  .makeStyles-drawerClose-12 {
+  .collapsed {
     h1.MuiTypography-root.MuiTypography-h1 {
       font-size: 28px;
     }
