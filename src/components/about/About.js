@@ -5,7 +5,7 @@ import Divider from '@material-ui/core/Divider';
 export default function About() {
   return (
     <section id="about">
-      <Typography variant="h2">About</Typography>
+      <Typography variant="h2"><span role="img" aria-label="about icon">📜</span> About</Typography>
       <Typography variant="h3">Entrepreneurship</Typography>
       <Typography variant="body1">I've always enjoyed working for myself and making my own schedule...</Typography>
       <Divider style={{margin: "25px 0"}} />
