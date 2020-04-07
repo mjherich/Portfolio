@@ -10,7 +10,7 @@ const Projects = ({data: { loading, error, projects }}) => {
   console.log(projects)
   return (
     <section id="projects">
-      <Typography variant="h2">Projects</Typography>
+      <Typography variant="h2"><span role="img" aria-label="projects icon">✨</span> Projects</Typography>
       <Typography variant="body1" style={{margin: "20px 0"}}>Check out my latest work in React, Python/Django and Java/Spring!</Typography>
       <Grid container spacing={3}>
         {!loading ? 

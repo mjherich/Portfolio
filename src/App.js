@@ -24,6 +24,7 @@ const theme = createMuiTheme({
       fontWeight: '400',
       textTransform: "uppercase",
       letterSpacing: 2,
+      margin: "30px 0 20px 0",
     },
     subtitle1: {
       fontFamily: '"Big Shoulders Display"',
