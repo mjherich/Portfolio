@@ -1,0 +1,20 @@
+p.MuiTypography-body1 {
+  margin-bottom: 25px;
+}
+.img-grid {
+  margin: auto !important;
+}
+.about-img {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.vwd-img {
+  width: 300px;
+}
+@media (max-width: 1279px) {
+  .img-grid {
+    order: 9000;
+  }
+}
