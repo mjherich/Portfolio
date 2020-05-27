@@ -4,6 +4,7 @@ import { graphql } from 'react-apollo';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
+import './projects.scss';
 import ProjectCard from './ProjectCard';
 
 const Projects = ({data: { loading, error, projects }}) => {

@@ -32,17 +32,17 @@ export default function ProjectCard({ project }) {
           <Typography gutterBottom variant="h3" component="h3">
             {project.title}
           </Typography>
-          <Typography variant="body1" color="textSecondary">
-            {project.description.text}
-          </Typography>
-          <div className="tech-scroll">
+          <ul className="tech-scroll">
             {project.tech["frontend"].map(el => {
               return <li>{el}</li>
             })}
             {project.tech["backend"].map(el => {
               return <li>{el}</li>
             })}
-          </div>
+          </ul>
+          <Typography variant="body1" color="textSecondary">
+            {project.description.text}
+          </Typography>
         </CardContent>
       <CardActions>
         <IconButton size="small" color="primary" component="a" href={project.githubLink} alt="View Source" title="View Source" target="_blank">
