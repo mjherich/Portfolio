@@ -15,10 +15,10 @@ const Projects = ({data: { loading, error, projects }}) => {
       <Grid container spacing={3}>
         {!loading ? 
           projects.map( project => (
-            <Grid item>
+            <Grid item key={project.title}>
               <ProjectCard project={project} />
             </Grid>
-          )) : <p>"Loading..."</p>
+          )) : <p>Loading...</p>
         }
       </Grid>
     </section>
@@ -37,6 +37,7 @@ export const getProjects = gql`
       screenshot {
         url
       }
+      tech
     }
   }
 `
