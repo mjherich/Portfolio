@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import IconButton  from '@material-ui/core/IconButton';
+import Button  from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import CodeIcon from '@material-ui/icons/Code';
 import LinkIcon from '@material-ui/icons/Link';
@@ -32,17 +32,25 @@ export default function ProjectCard({ project }) {
           <Typography gutterBottom variant="h3" component="h3">
             {project.title}
           </Typography>
+          <ul className="tech-scroll">
+            {project.tech["frontend"].map(el => {
+              return <li>{el}</li>
+            })}
+            {project.tech["backend"].map(el => {
+              return <li>{el}</li>
+            })}
+          </ul>
           <Typography variant="body1" color="textSecondary">
             {project.description.text}
           </Typography>
         </CardContent>
       <CardActions>
-        <IconButton size="small" color="primary" component="a" href={project.githubLink} alt="View Source" title="View Source" target="_blank">
-          <CodeIcon />
-        </IconButton>
-        <IconButton size="small" color="primary" component="a" href={project.deploymentLink} alt="View Site" title="View Site" target="_blank">
-          <LinkIcon />
-        </IconButton>
+        <Button size="small" variant="contained" color="primary" startIcon={<CodeIcon/>} component="a" href={project.githubLink} alt="View Source" title="View Source" target="_blank">
+          Source
+        </Button>
+        <Button size="small" variant="contained" color="primary" startIcon={<LinkIcon/>} component="a" href={project.deploymentLink} alt="View Site" title="View Site" target="_blank">
+          Deployment
+        </Button>
       </CardActions>
     </Card>
   );

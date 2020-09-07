@@ -4,6 +4,7 @@ import { graphql } from 'react-apollo';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
+import './projects.scss';
 import ProjectCard from './ProjectCard';
 
 const Projects = ({data: { loading, error, projects }}) => {
@@ -11,14 +12,14 @@ const Projects = ({data: { loading, error, projects }}) => {
   return (
     <section id="projects">
       <Typography variant="h2"><span role="img" aria-label="projects icon">✨</span> Projects</Typography>
-      <Typography variant="body1" style={{margin: "20px 0"}}>Check out my latest work in React, Python/Django and Java/Spring!</Typography>
+      <Typography variant="body1" style={{margin: "20px 0"}}>Check out my latest work in React, Node/Express, Python/Django and Java/Spring!</Typography>
       <Grid container spacing={3}>
         {!loading ? 
           projects.map( project => (
-            <Grid item>
+            <Grid item key={project.title}>
               <ProjectCard project={project} />
             </Grid>
-          )) : <p>"Loading..."</p>
+          )) : <p>Loading...</p>
         }
       </Grid>
     </section>
@@ -37,6 +38,7 @@ export const getProjects = gql`
       screenshot {
         url
       }
+      tech
     }
   }
 `
