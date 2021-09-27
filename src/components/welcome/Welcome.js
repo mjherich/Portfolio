@@ -8,7 +8,7 @@ export default function Welcome() {
     <section id="welcome">
       <Typography variant="h2"><span role="img" aria-label="welcome icon">🙋‍♂️</span> Welcome</Typography>
       <Typography variant="body1" className="welcome-body">
-        My name is Matt and I'm an entrepreneur at heart who loves to code and solve challenging problems.<br/>
+        My name is Matt. Coding and solving challenging problems are some things I like to do.<br/>
         <br/>
         I was a part of <a href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School's</a> May 2019 cohort.<br/>
       </Typography>
