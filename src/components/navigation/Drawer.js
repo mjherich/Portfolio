@@ -128,12 +128,6 @@ export default function MiniDrawer({open, setOpen}) {
         <ListItem button component={AnchorLink} href="#projects">
           <ListItemText primary="Projects" />
         </ListItem>
-        <ListItem button component={AnchorLink} href="#about">
-          <ListItemText primary="About" />
-        </ListItem>
-        {/* <ListItem button component="a" href="https://drive.google.com/file/d/1xaYv15OpAJUL9ev277nCf9cEUwdCVBmk/view?usp=sharing" target="_blank">
-          <ListItemText primary="Resume" />
-        </ListItem> */}
         <ListItem button component={AnchorLink} href="#contact">
           <ListItemText primary="Contact" />
         </ListItem>
