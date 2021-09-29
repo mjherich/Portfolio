@@ -16,9 +16,6 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Avatar from '@material-ui/core/Avatar';
-
-import mattImg from './matt.JPG';
 
 const drawerWidth = 300;
 
@@ -100,7 +97,6 @@ export default function MiniDrawer({open, setOpen}) {
     >
       <Container className="site-title">
         <div className="title-container">
-          <Avatar src={mattImg} className={classes.large} />
           <div className="title-text">
             <Typography variant="h1">Matt Herich</Typography>
             <Typography variant="subtitle1">Full Stack Developer</Typography>
