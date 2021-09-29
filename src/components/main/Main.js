@@ -13,7 +13,6 @@ export default function Main() {
     <div className="portfolio-main">
       <Welcome />
       <Projects />
-      {/* <About /> */}
       <Contact />
     </div>
   )
