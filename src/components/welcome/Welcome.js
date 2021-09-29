@@ -12,7 +12,7 @@ export default function Welcome() {
         <br/>
         I was a part of <a href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School's</a> May 2019 cohort.<br/>
         <br/>
-        Currently building software in real estate.<br/>
+        Currently building software in real estate 🏠<br/>
       </Typography>
     </section>
   )
