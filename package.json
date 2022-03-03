@@ -11,13 +11,12 @@
     "font-awesome": "^4.7.0",
     "graphql": "^15.3.0",
     "graphql-tag": "^2.11.0",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-apollo": "^3.1.5",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
   }
 }
