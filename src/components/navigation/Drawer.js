@@ -99,7 +99,7 @@ export default function MiniDrawer({open, setOpen}) {
         <div className="title-container">
           <div className="title-text">
             <Typography variant="h1">Matt Herich</Typography>
-            <Typography variant="subtitle1">Full Stack Developer</Typography>
+            <Typography variant="subtitle1">Software Engineer</Typography>
           </div>
         </div>
         <Typography className="st-links">
